@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Abdi dan Utiya</title>
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap">
+
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+  </head>
+  
+  <body class="overflow-hidden">
+    <!-- music -->
+     <audio src="asset/audio/music-wedding.mp3" loop class="music"></audio>
+     <audio src="asset/audio/sfx-door.mp3" class="sound-door"></audio>
+    
+   <!-- door section -->
+    <div id="door-section" class="open" onclick="mulai()">  
+      <h1 class="info huruf-judul">click this Door</h1>
+      <div class="doors-wrapper">
+        <div class="doors">
+          <div class="door left">
+            <img src="asset/img/door-left.png" alt="left-door">
+          </div>
+          <div class="door right">
+            <img src="asset/img/door-right.png" alt="right-door">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+     <!-- content section -->
+      <div id="content-section">
+        <!-- navbar -->
+         <ul class="nav">
+            <span class="nav-music"></span>
+            <li>
+              <a href="#acara-section">
+                <i class="fas fa-fw fa-calendar-day"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#lokasi-section">
+                <i class="fas fa-fw fa-location-dot"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-item-music rotate" id="music-button" onclick="toogleMusic(event)">
+                <i class="fas fa-fw fa-compact-disc"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#rsvp-section">
+                <i class="fas fa-fw fa-check-to-slot"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#komentar-section">
+                <i class="fa-solid fa-comment"></i>
+              </a>
+            </li>
+         </ul>
+        
+
+            <section id="hero-section">
+              <div class="image-wrapper">
+                <img src="asset/img/pengantin.png" alt="pengantin" class="pengantin">
+                <a href="#pembuka-section" class="rounded-pill btn btn-lg btn-get-started py-3">
+                  <i class="fas fa-fw fa-envelope-open-text"></i> Buka Undangan
+                </a>
+              </div>
+              <img src="asset/img/sakura.gif" alt="sakura" class="sakura-animasi">
+            </section>
+
+            <!-- pembuka section -->
+            <section id="pembuka-section" class="pembuka-section section-bg py-5">
+              <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="section-title text-center">
+                      <h3 class="text-pastel-blue fw-bold arabic-text" style="text-align: center; padding-bottom: 5px;">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+                      <h3 class="arabic-text">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ <span class="ayat-bulat">&#x06DD;٢١</span></h3>
+                      <p>Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+                      <p>(QS. Ar-Rūm (30) : 21)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+                  
+          <!-- profil section -->
+          <section id="profil-section" class="profil-section py-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h1 class="text-pastel-blue fw-bold huruf-judul">Assalamu'alaikum</h1>
+                  </div>
+
+                  <div class="row my-4 justify-content-center">
+                      <!-- Pria -->
+                      <div class="col-md-5 text-center" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                        <img src="asset/img/groom.jpeg" alt="Pria" class="img-fluid rounded-circle mb-3" style="max-height: 100px;">
+                        <h1 class="huruf-sambung">Busairi Abdi Hafizh</h1>
+                        <p>Putra pertama dari pasangan:</p>
+                        <p>Suriansyah & Masitah</p>
+                      </div>
+
+                      <!-- Simbol & -->
+                      <div class="col-md-2 text-center my-auto" data-aos="fade-down" data-aos-duration="1500">
+                        <h1 class="huruf-sambung">&</h1>
+                      </div>
+
+                      <!-- Wanita -->
+                      <div class="col-md-5 text-center" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="asset/img/bride1.jpeg" alt="Perempuan" class="img-fluid rounded-circle mb-3" style="max-height: 100px;">
+                        <h1 class="huruf-sambung">Utiya Fathina B.</h1>
+                        <p>Putri pertama dari pasangan:</p>
+                        <p>Bikerun & Rahmah</p>
+                      </div>
+
+                      <div class="col-md-2 text-center my-auto" data-aos="fade-down" data-aos-duration="1500">
+                        <h3 class="huruf-judul">Akan Menikah Pada</h3>
+                        <h4>Rabu, 11 Juni 2025</h4>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- acara section -->
+          <section id="acara-section" class="acara-section section-bg py-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title">
+                    <h1 class="text-pastel-blue fw-bold huruf-judul">Acara Pernikahan</h1>
+                    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restunya, kami ucapkan terima kasih.</p>
+                  </div>
+                  <div class="row justify-content-between px-3 text-center">
+                    <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                      <h4>Akad Nikah</h4>
+                      <hr>
+                      <p><i class="fas fa-fw fa-calendar-day"></i> Rabu, 11 Juli 2025</p>
+                      <p><i class="fas fa-fw fa-clock"></i> 09.30 - Selesai</p>
+                      <p><i class="fas fa-fw fa-location-dot"></i> KUA Sempaja Utara</p>
+                      <p><i class="fa-solid fa-link"></i> Link Zoom:</p>
+                      <p><a href="https://telkomsel.zoom.us/j/99592181104?pwd=boLzzL49vrkw6tJmwbW47WIu1pTUHr.1" target="_blank">https://telkomsel.zoom.us/j/99592181104?pwd=boLzzL49vrkw6tJmwbW47WIu1pTUHr.1</a></p>
+                      <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&details=Akad+Nikah+Abdi+%26+Utiya&location=KUA+Sempaja+Utara&dates=20250611T013000Z%2F20250611T023000Z" class="btn btn-lg btn-pastel-blue rounded-pill" target="_blank">
+                        <i class="fas fa-fw fa-calendar-day"></i> Simpan ke Kalender
+                      </a>
+                    </div>
+
+                    <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                      <h4>Selamatan Pernikahan</h4>
+                      <hr>
+                      <p><i class="fas fa-fw fa-calendar-day"></i> Rabu, 11 Juli 2025</p>
+                      <p><i class="fas fa-fw fa-clock"></i> 11.00 - 16.00</p>
+                      <p><i class="fas fa-fw fa-location-dot"></i> Jl. Graha Indah, Gg. Al-Barokah, No. 37</p>
+                      <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&details=Akad+Nikah+Abdi+%26+Utiya&location=KUA+Sempaja+Utara&dates=20250611T013000Z%2F20250611T023000Z" class="btn btn-lg btn-pastel-blue rounded-pill" target="_blank">
+                        <i class="fas fa-fw fa-calendar-day"></i> Simpan ke Kalender
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </section>
+          
+          <!-- lokasi section -->
+          <section id="lokasi-section" class="lokasi-section py-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title">
+                    <h1 class="text-pastel-blue fw-bold huruf-judul">Lokasi Acara</h1>
+                  </div>
+                  <div class="container" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                      <a href="https://maps.app.goo.gl/1VAiP8eCWS6EXo8X6" target="_blank" class="btn btn-lg btn-pastel-blue rounded-pill mb-4">
+                        <i class="fas fa-fw fa-location-dot"></i> Buka di Google Maps
+                      </a>
+                    
+                      <!-- Responsive Google Maps Embed -->
+                      <div class="map-responsive border-pastel-blue">
+                        <iframe 
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.73103514565577!2d117.1212642793814!3d-0.4780145681517498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67f20cb889f3b%3A0x91efade3f22e76af!2sPenata%20Rambut%20Ronald!5e0!3m2!1sid!2sid!4v1748884276285!5m2!1sid!2sid"
+                          width="600"
+                          height="400"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- rsvp section -->
+          <section id="rsvp-section" class="rsvp-section section-bg py-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title">
+                    <h1 class="text-pastel-blue fw-bold huruf-judul">Konfirmasi Kehadiran</h1>
+                    <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran Anda.</p>
+                  </div>
+                  <div class="container" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                    <form action="https://script.google.com/macros/s/AKfycby7uCFvWWWMOnygRg2WHSy5wcd5ckDgSFd4ZrlNSW8qvQmGPsDfwO7GbzncUHO7QBQy6g/exec" method="post" id="rsvp-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="Nama Lengkap" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="jumlah">Jumlah</label>
+                        <select name="Jumlah" id="jumlah" class="form-select">
+                          <option value="0">--- Pilih jumlah Kehadiran ---</option>
+                          <option value=1>1</option>
+                          <option value=2>2</option>
+                          <option value=3>3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="status">Status</label>
+                        <select name="Status" id="status" class="form-select" required>
+                          <option value="0">--- Pilih salah satu ---</option>
+                          <option value="Hadir">Hadir</option>
+                          <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <div class="mt-3"></div>
+                      <button button type="submit" class="btn btn-kirim"><i class="fas fa-fw fa-paper-plane"></i> Kirim</button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- whishes section -->
+          <section id="whishes-section" class="whishes-section py-5">
+            <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title">
+                    <h1 class="text-pastel-blue fw-bold huruf-judul">Ucapan Selamat</h1>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="carousel" id="carousel">
+                        <div class="slides">
+                          <div class="card">
+                            <div class="card-img-wrapper">
+                              <img src="asset/img/Sabiq.jpeg" alt="Foto Sabiq">
+                            </div>
+                            <p>"Cinta kalian adalah contoh bagi banyak orang, dan kami berdoa agar pernikahan menjadi sumber inspirasi bagi banyak orang."</p>
+                            <h3>- Muhammad Sabiq</h3>
+                          </div>
+                          <div class="card">
+                            <div class="card-img-wrapper">
+                              <img src="asset/img/Nisa.jpeg" alt="Foto Nisa">
+                            </div>
+                            <p>"Dua hati, satu cinta, satu perjalanan. Happy wedding kakakku tercinta. Kebahagiaan selalu menyertai kalian dan selamat menempuh hidup baru. Semoga jadi keluarga sakinah, mawaddah, warrahmah yaaaaaa. Semoga perjalanan cinta kalian selalu diberkahi kehangatan, kedamaian, dan kebahagiaan oleh Allah swt.🙂"</p>
+                            <h3>- Nisa</h3>
+                          </div>
+                            
+                          <div class="card">
+                            <div class="card-img-wrapper">
+                              <img src="asset/img/Herli.PNG" alt="Foto Herliansyah">
+                            </div>
+                            <p>"Selamat Mas Abdi menempuh hidup yang baru dengan pasangan, Semoga pintu rezeki diberikan terus ga putus, Kesehatan dan semoga langgeng terus dan saling belajar memahami satu sama lain."</p>
+                            <h3>- Herliansyah</h3>
+                          </div>
+                            
+                          <div class="card">
+                            <div class="card-img-wrapper">
+                              <img src="asset/img/Yassin.PNG" alt="Foto Yassin">
+                            </div>
+                            <p>"Selamat menempuh hidup baru untuk abdi dan pasangan. Semoga pernikahan ini menjadi awal yang indah dari perjalanan panjang penuh cinta, pengertian, dan kebahagiaan. Semoga kalian selalu saling menguatkan, saling mendukung, dan tumbuh bersama dalam segala hal, baik suka maupun duka. Serta menjadi keluarga yang sakinah mawadah dan warohmah."</p>
+                            <h3>- Yassin</h3>
+                          </div>
+                          
+                          <div class="card">
+                            <div class="card-img-wrapper">
+                              <img src="asset/img/Marzal.png" alt="Foto Marzal">
+                            </div>
+                            <p>"Selamat menempuh hidup baru mas, semoga pernikahannya selalu dilimpahkan rejeki, kebahagiaan dan keharmonisan serta saling mensupport satu sama lain semoga Allah menjadikan keluarga mas sakinah mawaddah warahmah, aamiin ya rabbal alamin."</p>
+                            <h3>- Marzal</h3>
+                          </div>
+                          
+                          <div class="card">
+                            <div class="card-img-wrapper">
+                              <img src="asset/img/Niah.PNG" alt="Foto Niah">
+                            </div>
+                            <p>"Barakallahu laka wa baraka 'alaika wa jama'a bainakuma fi khair.": "Semoga Allah memberkahi kamu dan memberkahi pasanganmu, dan mempersatukan kamu berdua dalam kebaikan. Menjadikan kalian pasangan yang selalu bahu membahu, saling mengasihi, dan membangun keluarga yang sakinah, mawaddah, dan rahmah."</p>
+                            <h3>- Niah</h3>
+                          </div>
+
+                        </div>
+                        <div class="dots"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-lg-12">
+                      <div id="disqus_thread"></div>
+                        <script>
+                            /**
+                            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                            /*
+                            var disqus_config = function () {
+                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            };
+                            */
+                            (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://weddingabdi-utiya.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- penutup section -->
+          <section id="penutup-section" class="penutup-section section-bg py-5">
+            <div class="container" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title">
+                    <h1 class="text-pastel-blue fw-bold huruf-sambung">Wassalamu'alaikum</h1>
+                    <p class="text-pastel-blue">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do'a restu kepada kami.</p>
+                    <h5 class="my-3">KAMI YANG BERBAHAGIA</h5>
+                    <h1 class="huruf-sambung">Abdi & Utiya</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- footer -->
+           <footer id="footer" class="mb-5 pb-5">
+            <div class="container py-5 text-center position-relative">
+              <div class="row">
+                <div class="row-12 my-3">
+                  <p class="text-decoration-none text-pastel-blue fw-bold">&copy; 2025. Made with 😎 by Busairi Abdi Hafizh</p>
+                </div>
+                <div class="col-12 my-3">
+                  <a href="#" class="text-pastel-blue"><i class="fas fa-fw fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+            </div>
+            
+           </footer>
+      </div>
+
+          
+
+    <!-- jquery3 -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <!-- aos -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- lightbox2 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- sweatalert2 -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js"></script>
+    <!-- masonry -->
+     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- js -->
+     <script src="asset/js/script.js"></script>
+     <script src="asset/js/Slideshow.js"></script>
+     
+  </body>
+</html>
